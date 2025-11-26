@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -8,7 +8,7 @@ import FeatureCardEight from '@/components/sections/feature/FeatureCardEight';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Concierge, Sparkles, Spa, Utensils } from 'lucide-react';
+import { ConciergeBell, Sparkles, Star, Utensils } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -27,7 +27,6 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1764125527379-carbn7ie.jpg"
-          logoAlt="Luxury Boutique Hotel"
           brandName="Luxe Haven"
           button={{
             text: "Reserve Now",
@@ -71,12 +70,12 @@ export default function LandingPage() {
               description: "Michelin-inspired cuisine crafted by award-winning chefs using the finest local and international ingredients."
             },
             {
-              icon: Spa,
+              icon: Star,
               title: "Wellness Sanctuary",
               description: "Full-service spa with rejuvenating treatments, yoga studios, and state-of-the-art fitness facilities."
             },
             {
-              icon: Concierge,
+              icon: ConciergeBell,
               title: "24/7 Concierge",
               description: "Dedicated team ensuring every request is fulfilled with discretion and excellence."
             }
